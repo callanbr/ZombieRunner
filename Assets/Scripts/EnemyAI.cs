@@ -6,8 +6,8 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour {
 
-  public Transform target;
-  public float chaseRange = 5f;
+  [SerializeField] Transform target;
+  [SerializeField] float chaseRange = 5f;
 
   NavMeshAgent navMeshAgent;
   float distanceToTarget = Mathf.Infinity;
