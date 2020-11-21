@@ -2637,11 +2637,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4278652654309657720, guid: 738de6cdcc3d54008a1e04c2586c3935,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 552401826}
     - target: {fileID: 5540795491876927981, guid: 738de6cdcc3d54008a1e04c2586c3935,
         type: 3}
       propertyPath: target
@@ -2776,5 +2771,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5850913350873933898, guid: 38d0f9f4c5a7e45c093e15e53bff252c,
+        type: 3}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 811714616}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d0f9f4c5a7e45c093e15e53bff252c, type: 3}

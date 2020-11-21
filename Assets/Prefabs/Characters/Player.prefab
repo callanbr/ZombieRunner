@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 5641305948832933041}
   - component: {fileID: 5641305948832933006}
   - component: {fileID: 3853442295504491795}
+  - component: {fileID: 5850913350873933898}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -247,12 +248,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 5641305948431241193}
   movementSettings:
-    ForwardSpeed: 10
-    BackwardSpeed: 10
-    StrafeSpeed: 10
+    ForwardSpeed: 5
+    BackwardSpeed: 5
+    StrafeSpeed: 5
     RunMultiplier: 3
     RunKey: 304
-    JumpForce: 100
+    JumpForce: 80
     SlopeCurveModifier:
       serializedVersion: 2
       m_Curve:
@@ -314,6 +315,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42090abdba58e459287b745f554c6a70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitPoints: 100
+--- !u!114 &5850913350873933898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5641305948832933007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f5a4581b0b5142e7ade023b4930c804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 0}
 --- !u!114 &973106513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,11 +444,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Muzzle Flash
-      objectReference: {fileID: 0}
-    - target: {fileID: 3614249443508621660, guid: 4a60d8477aafac045a1f56d3a60c7813,
-        type: 3}
-      propertyPath: looping
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}

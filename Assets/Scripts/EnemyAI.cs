@@ -14,12 +14,6 @@ public class EnemyAI : MonoBehaviour {
   float distanceToTarget = Mathf.Infinity;
   bool isProvoked = false;
 
-  void OnDrawGizmosSelected() {
-    Gizmos.color = new Color(1, 0, 0, 0.8F);
-    // Gizmos.DrawSphere(transform.position, chaseRange);
-    Gizmos.DrawWireSphere(transform.position, chaseRange);
-  }
-
   void Start() {
     navMeshAgent = GetComponent<NavMeshAgent>();
   }
@@ -57,5 +51,11 @@ public class EnemyAI : MonoBehaviour {
     Vector3 direction = (target.position - transform.position).normalized;
     Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
     transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
+  }
+
+  void OnDrawGizmosSelected() {
+    Gizmos.color = new Color(1, 0, 0, 0.8F);
+    // Gizmos.DrawSphere(transform.position, chaseRange);
+    Gizmos.DrawWireSphere(transform.position, chaseRange);
   }
 }
