@@ -343,6 +343,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fpsCamera: {fileID: 5641305948431241193}
+  zoomedOutFOV: 60
+  zoomedInFOV: 15
+  zoomOutSensitivity: 2
+  zoomInSensitivity: 0.5
 --- !u!114 &973106513
 MonoBehaviour:
   m_ObjectHideFlags: 0
