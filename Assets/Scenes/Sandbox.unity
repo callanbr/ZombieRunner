@@ -6573,6 +6573,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1388736605060910841, guid: 38d0f9f4c5a7e45c093e15e53bff252c,
+        type: 3}
+      propertyPath: ammoAmount
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3207404870806098745, guid: 38d0f9f4c5a7e45c093e15e53bff252c,
         type: 3}
       propertyPath: m_Enabled
