@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 1388736605060910841}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -342,7 +342,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f43bd72e05d54a4ca04c62ff1c51c16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 100
+  - ammoType: 1
+    ammoAmount: 2
+  - ammoType: 2
+    ammoAmount: 10
 --- !u!1 &8246091256068040941
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a2b21d6a15ac46cdbc92c671318e015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!1001 &749913203832656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -400,6 +407,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206659374978415273, guid: c481a6b1ecd5045fbb611d312e3aeb42,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3206659374978442889, guid: c481a6b1ecd5045fbb611d312e3aeb42,
         type: 3}
@@ -486,20 +498,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol
       objectReference: {fileID: 0}
+    - target: {fileID: 3206659374978415273, guid: f6f52b72acafa4d918915cba98db99e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3206659374978442889, guid: f6f52b72acafa4d918915cba98db99e1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.146
+      value: 0.1327
       objectReference: {fileID: 0}
     - target: {fileID: 3206659374978442889, guid: f6f52b72acafa4d918915cba98db99e1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.123
+      value: -0.1018
       objectReference: {fileID: 0}
     - target: {fileID: 3206659374978442889, guid: f6f52b72acafa4d918915cba98db99e1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.509
+      value: 0.2278
       objectReference: {fileID: 0}
     - target: {fileID: 3206659374978442889, guid: f6f52b72acafa4d918915cba98db99e1,
         type: 3}
@@ -625,11 +642,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 2.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 3206659374980342889, guid: e15b4ac2ecc2e4057b704dd36e097b43,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7159494348208960623, guid: e15b4ac2ecc2e4057b704dd36e097b43,
         type: 3}
