@@ -182,7 +182,6 @@ GameObject:
   - component: {fileID: 5641305948832933006}
   - component: {fileID: 3853442295504491795}
   - component: {fileID: 5850913350873933898}
-  - component: {fileID: 7729140814163184525}
   - component: {fileID: 1388736605060910841}
   m_Layer: 0
   m_Name: Player
@@ -331,23 +330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
---- !u!114 &7729140814163184525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5641305948832933007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a24c883d496f418f9704c2d03c0d2eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fpsCamera: {fileID: 5641305948431241193}
-  zoomedOutFOV: 60
-  zoomedInFOV: 15
-  zoomOutSensitivity: 2
-  zoomInSensitivity: 0.5
 --- !u!114 &1388736605060910841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,6 +618,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7159494348208960623, guid: e15b4ac2ecc2e4057b704dd36e097b43,
+        type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 5641305948431241193}
+    - target: {fileID: 7159494348208960623, guid: e15b4ac2ecc2e4057b704dd36e097b43,
+        type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 5641305948832933006}
     - target: {fileID: 8662480972417708655, guid: e15b4ac2ecc2e4057b704dd36e097b43,
         type: 3}
       propertyPath: FPCamera
