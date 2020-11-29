@@ -104,6 +104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f00120381aa4b4a9ab5cd7059f6bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightDecay: 0.1
-  angleDecay: 0.5
-  minimumAngle: 40
+  lightDecay: 0.05
+  angleDecay: 0.1
+  minimumAngle: 60

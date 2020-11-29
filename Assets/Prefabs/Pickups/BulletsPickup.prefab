@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoAmount: 10
-  ammoType: 0
+  ammoType: 2
 --- !u!1001 &416720499412028161
 PrefabInstance:
   m_ObjectHideFlags: 0

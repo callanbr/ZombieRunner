@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04cc5c58e137b417d89f7fe28b8e6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseRange: 20
+  chaseRange: 15
   turnSpeed: 5
 --- !u!195 &5540795491876927980
 NavMeshAgent:
@@ -133,7 +133,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b186c4c2efcd5452d8310010ea979ccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 10
 --- !u!1001 &784589612323020988
 PrefabInstance:
   m_ObjectHideFlags: 0

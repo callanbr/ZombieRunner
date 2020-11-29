@@ -345,12 +345,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoSlots:
-  - ammoType: 0
-    ammoAmount: 100
-  - ammoType: 1
-    ammoAmount: 2
   - ammoType: 2
     ammoAmount: 10
+  - ammoType: 1
+    ammoAmount: 2
+  - ammoType: 0
+    ammoAmount: 1000
 --- !u!114 &2076750767923488972
 MonoBehaviour:
   m_ObjectHideFlags: 0
